@@ -1,6 +1,5 @@
 package com.example.demo;
 
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -33,6 +32,8 @@ public class ConstantsController {
     @GetMapping(value = "/beanGreeting")
     public String beanGreeting()
     {
+
+
         return entityBean.getName() + "/" + entityBean.getAge() + "/" + entityBean.getUuid() + "/" + entityBean.getGreeting() + "/";
     }
 }
