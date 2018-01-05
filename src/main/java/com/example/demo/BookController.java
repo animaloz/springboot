@@ -19,6 +19,9 @@ public class BookController {
     @RequestMapping(value={""}, method= RequestMethod.GET)
     public List<Book> getBook() {
         List<Book> book = new ArrayList<>(books.values());
+
+
+
         return book;
     }
 
