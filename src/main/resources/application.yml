@@ -1,0 +1,16 @@
+spring:
+  devtools:
+    restart:
+      additional-paths: src\\main\\java\\com\\example\\demo
+      restart:
+        exclude: static/**,public/**
+  profiles:
+    active: dev
+student:
+  name: guanxy
+  age: 25
+  number: ${random.int}
+  uuid: ${random.uuid}
+  max: ${random.int(10)}
+  value: ${random.value}
+  greeting: hello ${student.name}
