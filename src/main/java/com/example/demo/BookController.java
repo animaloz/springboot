@@ -21,7 +21,6 @@ public class BookController {
         List<Book> book = new ArrayList<>(books.values());
         for (Book bookEntity: book) {
             System.out.println(bookEntity);
-            System.out.println(bookEntity2);
         }
         return book;
     }
