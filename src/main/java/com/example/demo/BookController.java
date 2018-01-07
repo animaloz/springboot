@@ -20,7 +20,7 @@ public class BookController {
     public List<Book> getBook() {
         List<Book> book = new ArrayList<>(books.values());
         for (Book bookEntity: book) {
-
+            System.out.println(bookEntity);
         }
         return book;
     }
