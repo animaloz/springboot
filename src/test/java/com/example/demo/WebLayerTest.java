@@ -25,8 +25,6 @@ public class WebLayerTest {
 
     @Test
     public void shouldReturnDefaultMessage() throws Exception {
-        this.mockMvc.perform(get("/beanGreeting")).andDo(print()).andExpect(status().isOk())
-                .andExpect(content().string(containsString("guanxy")))
-                .andDo(document("home"));
+
     }
 }
